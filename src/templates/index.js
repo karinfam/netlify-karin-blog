@@ -6,7 +6,7 @@ import Card from '../components/Card';
 import Container from '../components/Container';
 import Summary from '../components/Summary';
 import Pagination from '../components/Pagination';
- 
+
 const IndexPage = ({ pathContext }) => {
   const { group, index, pageCount } = pathContext;
   const previousUrl = index - 1 == 1 ? "" : (index - 1).toString();
@@ -14,9 +14,9 @@ const IndexPage = ({ pathContext }) => {
   return (
     <Container>
       <Helmet title={`${userConfig.title} | ${userConfig.author}`} />
-      {group.map(({ node }) => (
+      {/*{group.map(({ node }) => (
         <Card key={node.fields.slug}>
-          <Summary 
+          <Summary
             date={node.frontmatter.date}
             title={node.frontmatter.title}
             excerpt={node.excerpt}
@@ -25,12 +25,12 @@ const IndexPage = ({ pathContext }) => {
           />
         </Card>
       ))}
-      <Pagination 
+      <Pagination
         isFirst={index === 1}
         isLast={index === pageCount}
         nextUrl={nextUrl}
         previousUrl={previousUrl}
-      />
+      />*/}
     </Container>
   );
 };
