@@ -2,7 +2,7 @@ import React from 'react';
 import Link, { withPrefix } from 'gatsby-link';
 
 import Wrapper from './Wrapper';
-import imgSrc from '../../main.jpg';
+import imgSrc from '../../karinfam-sketch.png';
 
 function HeaderImage() {
   return (
