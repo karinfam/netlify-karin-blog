@@ -22,14 +22,13 @@ function Header({ config }) {
         <P>{tagline}</P>
         {social &&
           <Social
-            website={social.website}
             github={social.github}
             twitter={social.twitter}
             linkedin={social.linkedin}
           />
         }
       </Wrapper>
-    </Container> 
+    </Container>
   );
 }
 
