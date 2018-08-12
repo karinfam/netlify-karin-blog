@@ -10,7 +10,6 @@ import Link from './Link';
 import Wrapper from './Wrapper';
 import Typist from 'react-typist';
 import '../../../node_modules/react-typist/dist/Typist.css';
-import './style.css';
 
 class Header extends React.Component {
 

@@ -1,9 +1,9 @@
 import { injectGlobal } from 'styled-components';
 import styledNormalize from 'styled-normalize';
- 
+
 injectGlobal`
   ${styledNormalize}
-  
+
   *,
   *:before,
   *:after {
@@ -19,11 +19,18 @@ injectGlobal`
 
   body {
     background: #f9fafc;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     padding: 50px 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  .tagline{
+    font-size: 20px;
+    line-height: 1.7;
+    font-family: helvetica;
+    color: #666666;
   }
 
   img {
