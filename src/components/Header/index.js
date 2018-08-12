@@ -24,7 +24,11 @@ class Header extends React.Component {
             <HeaderImage/>
           )}
           <H1><Link to="/">{this.props.config.author}</Link></H1>
-          <Typist className='tagline' avgTypingSpeed={40}>{this.props.config.tagline}</Typist>
+          <Typist className='tagline' avgTypingSpeed={40}>
+            {this.props.config.tagline}
+            <Typist.Backspace count={this.props.config.tagline.length} delay={1000} />
+            Contact me below!
+          </Typist>
 
           {this.props.config.social &&
             <Social
