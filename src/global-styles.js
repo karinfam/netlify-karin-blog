@@ -1,5 +1,6 @@
 import { injectGlobal } from 'styled-components';
 import styledNormalize from 'styled-normalize';
+import '../node_modules/react-typist/dist/Typist.css'; 
 
 injectGlobal`
   ${styledNormalize}
